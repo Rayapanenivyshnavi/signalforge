@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 207 44% 7%;
+    --foreground: 174 30% 93%;
+    --card: 207 42% 10%;
+    --card-foreground: 174 30% 93%;
+    --popover: 207 42% 10%;
+    --popover-foreground: 174 30% 93%;
+    --primary: 174 65% 52%;
+    --primary-foreground: 185 73% 8%;
+    --secondary: 199 34% 17%;
+    --secondary-foreground: 174 30% 93%;
+    --muted: 199 28% 15%;
+    --muted-foreground: 193 19% 57%;
+    --accent: 199 34% 17%;
+    --accent-foreground: 174 30% 93%;
+    --destructive: 8 59% 57%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 199 32% 19%;
+    --input: 199 32% 19%;
+    --ring: 174 65% 52%;
+    --radius: .65rem;
+    --sidebar-background: 207 44% 7%;
+    --sidebar-foreground: 193 19% 57%;
+    --sidebar-primary: 174 65% 52%;
+    --sidebar-primary-foreground: 185 73% 8%;
+    --sidebar-accent: 199 34% 17%;
+    --sidebar-accent-foreground: 174 30% 93%;
+    --sidebar-border: 199 32% 19%;
+    --sidebar-ring: 174 65% 52%;
+  }
+  * { @apply border-border; }
+  html { background: #07101b; }
+  body { @apply bg-background text-foreground; margin: 0; min-width: 320px; font-family: "DM Mono", monospace; }
+  ::selection { background: rgba(41,211,194,.3); color: #effffd; }
+}
